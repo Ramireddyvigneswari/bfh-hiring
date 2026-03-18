@@ -25,10 +25,22 @@ The application integrates with an external API to generate a webhook and access
 - Authorization headers
 - SQL window functions (RANK)
 
+##  How It Works
+1. Sends POST request to generate webhook and access token
+2. Receives webhook URL and token from API
+3. Builds SQL query to find highest salary employees per department
+4. Submits query to webhook using Authorization header
+5. Receives response from server
+   
 ##  How to Run
 1. Clone the repository
 2. Open in Eclipse / STS
 3. Run as Spring Boot Application
+
+
+
+## 👩‍💻 Author
+Ramireddy Vigneswari   
 
 ##  Author
 Ramireddy Vigneswari
